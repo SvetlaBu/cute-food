@@ -1,6 +1,6 @@
 import React from "react";
-import FeatureCard from "/src/components/ui/feature-card/feature-card";
-import { Ul, Li } from "/src/components/styled";
+import FeatureCard from "../../ui/feature-card/feature-card";
+import { Ul, Li } from "../../styled/";
 import { Features, StyledButton, StyledTitle } from "./styles";
 
 // список преимуществ

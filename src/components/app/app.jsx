@@ -1,7 +1,7 @@
 import React from "react";
-import PageWrapper from "/src/components/layout/page-wrapper/page-wrapper";
-import features from "/src/mocks/features";
-import products from "/src/mocks/products";
+import PageWrapper from "../../components/layout/page-wrapper/page-wrapper";
+import features from "../../mocks/features";
+import products from "../../mocks/products";
 import { GlobalStyle } from "./styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AppRoute } from "../../const";

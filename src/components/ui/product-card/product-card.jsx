@@ -1,6 +1,5 @@
 import React from "react";
-import Panel from "/src/components/ui/panel/panel";
-import { TitleSize } from "/src/components/ui/title/title";
+import { TitleSize } from "../../ui/title/title";
 import {
   ProductImage,
   ProductPanel,
@@ -8,8 +7,8 @@ import {
   Price,
   ContentWrapper
 } from "./styles";
-import Tabs from "/src/components/ui/tabs/tabs";
-import OptionsList from "/src/components/ui/options-list/options-list";
+import Tabs from "../../ui/tabs/tabs";
+import OptionsList from "../../ui/options-list/options-list";
 
 function ProductCard({ product }) {
   const tabsList = [

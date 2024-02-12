@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { Button, Ul, Li } from "/src/components/styled";
+import { Button, Ul, Li } from "../../styled";
 
 export const TabListItem = styled(Li)`
   margin-right: 8px;

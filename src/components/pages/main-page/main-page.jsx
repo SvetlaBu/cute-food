@@ -1,6 +1,6 @@
 import React from "react";
-import About from "/src/components/blocks/about/about";
-import FeatureList from "/src/components/blocks/feature-list/feature-list";
+import About from "../../blocks/about/about";
+import FeatureList from "../../blocks/feature-list/feature-list";
 
 function MainPage({ features }) {
   return (

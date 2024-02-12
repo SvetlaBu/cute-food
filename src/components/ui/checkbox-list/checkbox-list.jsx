@@ -1,6 +1,6 @@
 import React from "react";
-import Checkbox from "/src/components/ui/checkbox/checkbox";
-import { Ul, Li } from "/src/components/styled";
+import Checkbox from "../../ui/checkbox/checkbox";
+import { Ul, Li } from "../../styled";
 
 // Радиокнопка
 function CheckboxList({

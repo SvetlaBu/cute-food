@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Img } from "/src/components/styled";
-import Title from "/src/components/ui/title/title";
-import Panel from "/src/components/ui/panel/panel";
+import { Img } from "../../styled";
+import Title from "../../ui/title/title";
+import Panel from "../../ui/panel/panel";
 
 export const ProductImage = styled(Img)`
   width: 248px;

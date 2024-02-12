@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Panel from "/src/components/ui/panel/panel";
-import Title, { TitleSize } from "/src/components/ui/title/title";
-import ProductCard from "/src/components/ui/product-card/product-card";
-import Button from "/src/components/ui/button/button";
-import CheckboxList from "/src/components/ui/checkbox-list/checkbox-list";
+import Panel from "../../ui/panel/panel";
+import Title, { TitleSize } from "../../ui/title/title";
+import ProductCard from "../../ui/product-card/product-card";
+import Button from "../../ui/button/button";
+import CheckboxList from "../../ui/checkbox-list/checkbox-list";
+import Swiper from "swiper";
 
 import {
   LeftColumn,
@@ -14,10 +15,13 @@ import {
   ProductSwiper,
   CheckboxLabel
 } from "./styles";
+
 import { SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Mousewheel, Scrollbar } from "swiper/core";
-import "swiper/swiper-bundle.min.css";
-SwiperCore.use([Mousewheel, Pagination, Scrollbar]);
+
+// import { SwiperCore } from "swiper/shared";
+import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
+// import "swiper/swiper-bundle.css";
+// Swiper.use([Mousewheel, Pagination, Scrollbar]);
 
 // Оформление заказа
 function Order({
@@ -30,10 +34,9 @@ function Order({
     products.find((product) => product.id === id)
   );
   //цена покупки
-  const fullPrice = selectProducts.reduce(
-    (summ, product) => (summ += product.price),
-    0
-  );
+  // const fullPrice = selectProducts.reduce(
+  //   (summ, product) => (summ += product.price),
+  // );
   const handleOnClickProduct = (value, index) => {
     if (!selectProductIds.includes(value)) {
       swiperRef.slideTo(index, 0);
@@ -41,11 +44,10 @@ function Order({
   };
   const [address, setAddress] = useState("");
   const handleBuyClick = () => {
-    // eslint-disable-next-line no-alert
     alert(`Спасибо за заказ, вы купили:\n${selectProducts.map(
       (product) => `${product.name} - ${product.price} руб.\n`
     )}
-    Итого: ${fullPrice} руб.
+    Итого: 1000 руб.
     Доставка по адресу: ${address}.`);
   };
   return products && products.length ? (
@@ -78,7 +80,7 @@ function Order({
             placeholder="Введите адрес доставки"
           />
           <PriceLabel as="span">Цена</PriceLabel>
-          <PriceValue value={fullPrice} />
+          {/* <PriceValue value={fullPrice} /> */}
           <Button maxWidth onClick={handleBuyClick}>
             Купить
           </Button>
