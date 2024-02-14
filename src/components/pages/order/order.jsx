@@ -17,11 +17,9 @@ import {
 } from "./styles";
 
 import { SwiperSlide } from "swiper/react";
-
-// import { SwiperCore } from "swiper/shared";
 import { Pagination, Mousewheel, Scrollbar } from "swiper/modules";
-// import "swiper/swiper-bundle.css";
-// Swiper.use([Mousewheel, Pagination, Scrollbar]);
+import "swiper/swiper-bundle.css";
+Swiper.use([Mousewheel, Pagination, Scrollbar]);
 
 // Оформление заказа
 function Order({
@@ -34,9 +32,10 @@ function Order({
     products.find((product) => product.id === id)
   );
   //цена покупки
-  // const fullPrice = selectProducts.reduce(
-  //   (summ, product) => (summ += product.price),
-  // );
+  const fullPrice = selectProducts.reduce(
+    (summ, product) => (summ += product.price),
+    0
+  );
   const handleOnClickProduct = (value, index) => {
     if (!selectProductIds.includes(value)) {
       swiperRef.slideTo(index, 0);
@@ -44,10 +43,11 @@ function Order({
   };
   const [address, setAddress] = useState("");
   const handleBuyClick = () => {
+    // eslint-disable-next-line no-alert
     alert(`Спасибо за заказ, вы купили:\n${selectProducts.map(
       (product) => `${product.name} - ${product.price} руб.\n`
     )}
-    Итого: 1000 руб.
+    Итого: ${fullPrice} руб.
     Доставка по адресу: ${address}.`);
   };
   return products && products.length ? (
@@ -80,7 +80,7 @@ function Order({
             placeholder="Введите адрес доставки"
           />
           <PriceLabel as="span">Цена</PriceLabel>
-          {/* <PriceValue value={fullPrice} /> */}
+          <PriceValue value={fullPrice} />
           <Button maxWidth onClick={handleBuyClick}>
             Купить
           </Button>
