@@ -34,7 +34,7 @@ export const StyledSection = styled(Section)`
 
 export const TextWrapper = styled.div`
   position: relative;
-  min-width: 650px;
+  width: 650px;
   z-index: 3;
 `;
 
@@ -47,7 +47,7 @@ export const Text = styled(Paragraph)`
 export const WorkTime = styled(Paragraph)`
   display: inline-block;
   min-height: 43px;
-  min-width: 292px;
+  width: 292px;
   margin-bottom: ${(props) => props.theme.indent};
   padding: 8px;
   border-radius: 8px;
