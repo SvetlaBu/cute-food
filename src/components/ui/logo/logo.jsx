@@ -1,5 +1,5 @@
 import React from "react";
-import { ReactComponent } from "../../../assets/logo.svg";
+import { ReactComponent } from "../../../assets/logo-food.svg";
 import { Text, StyledLogo } from "./styles";
 
 // Логотип сайта с названием
@@ -7,7 +7,7 @@ function Logo() {
   return (
     <StyledLogo href="/">
       <ReactComponent />
-      <Text>Фермерские продукты</Text>
+      <Text>Милые десерты</Text>
     </StyledLogo>
   );
 }

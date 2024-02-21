@@ -17,7 +17,7 @@ const buttons = [
     to: AppRoute.ORDER,
     button: (
       <Button minWidth={260} key={AppRoute.ORDER} link="/order">
-        Купить
+        Полакомиться
       </Button>
     )
   }

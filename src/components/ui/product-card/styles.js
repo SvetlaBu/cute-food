@@ -7,6 +7,8 @@ export const ProductImage = styled(Img)`
   width: 248px;
   height: 248px;
   margin-right: 20px;
+
+  border-radius: 20px;
 `;
 
 export const ContentWrapper = styled.div`
