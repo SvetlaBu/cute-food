@@ -4,7 +4,7 @@ import { Ul, Li } from "../../styled";
 
 // Радиокнопка
 function CheckboxList({
-  selectValues, // массив выбранных значений
+  selectvalues, // массив выбранных значений
   labelComponent, // Компонент для отображения label
   options, // массив с объектами для выбора {title: заголовок, value: значение}
   name, // имя
@@ -13,7 +13,7 @@ function CheckboxList({
   onClickLabel = () => {}
 }) {
   const handleChange = (value) => {
-    const newValue = [...selectValues];
+    const newValue = [...selectvalues];
     const indexValue = newValue.indexOf(value);
     if (indexValue !== -1) {
       newValue.splice(indexValue, 1);
@@ -29,8 +29,8 @@ function CheckboxList({
         <Li key={option.value}>
           <Checkbox
             labelComponent={labelComponent}
-            selectValues={selectValues}
-            isChecked={selectValues.includes(option.value)}
+            selectvalues={selectvalues}
+            isChecked={selectvalues.includes(option.value)}
             name={name}
             value={option.value}
             text={option.title}

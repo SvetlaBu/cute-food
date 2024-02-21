@@ -9,7 +9,7 @@ function FeaturesList({
 }) {
   return features && features.length ? (
     <Features>
-      <StyledTitle as="h2">Почему фермерские продукты лучше?</StyledTitle>
+      <StyledTitle as="h2">Почему милые десерты лучше?</StyledTitle>
       <Ul $isGridList>
         {features.map((feature) => (
           <Li key={feature.id}>

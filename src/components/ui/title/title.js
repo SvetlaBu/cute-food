@@ -30,7 +30,7 @@ const TitleSizeValue = {
 export const Title = styled.h1`
   margin: 0;
   padding: 0;
-  margin-bottom: ${(props) => props.marginBottom || 0}px;
+  margin-bottom: ${(props) => props.marginbottom || 0}px;
   font-weight: bold;
   ${(props) => {
     const values = TitleSizeValue[props.size || TitleSize.MEDIUM];

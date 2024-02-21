@@ -8,7 +8,7 @@ const buttons = [
   {
     to: AppRoute.MAIN,
     button: (
-      <MainButton minWidth={260} key={AppRoute.MAIN} link="/">
+      <MainButton minwidth={260} key={AppRoute.MAIN} link="/">
         На Главную
       </MainButton>
     )
@@ -16,7 +16,7 @@ const buttons = [
   {
     to: AppRoute.ORDER,
     button: (
-      <Button minWidth={260} key={AppRoute.ORDER} link="/order">
+      <Button minwidth={260} key={AppRoute.ORDER} link="/order">
         Полакомиться
       </Button>
     )

@@ -53,8 +53,8 @@ function Order({
   return products && products.length ? (
     <StyledOrder as="form">
       <LeftColumn>
-        <Panel marginBottom={20} paddingTop={24} paddingBottom={10}>
-          <Title as="h2" size={TitleSize.EXTRA_SMALL} marginBottom={12}>
+        <Panel marginbottom={20} paddingtop={24} paddingbottom={10}>
+          <Title as="h2" size={TitleSize.EXTRA_SMALL} marginbottom={12}>
             Выберите продукты
           </Title>
           <CheckboxList
@@ -65,13 +65,13 @@ function Order({
               value: product.id,
               title: product.name
             }))}
-            selectValues={selectProductIds}
+            selectvalues={selectProductIds}
             onChange={setSelectProductIds}
             onClickLabel={handleOnClickProduct}
           />
         </Panel>
         <Panel>
-          <Title size={TitleSize.EXTRA_SMALL} marginBottom={24}>
+          <Title size={TitleSize.EXTRA_SMALL} marginbottom={24}>
             Сделать заказ
           </Title>
           <AddressInput
