@@ -1,7 +1,7 @@
 {
   "name": "cute-food",
   "version": "0.1.0",
-  "homepage": "https://github.com/SvetlaBu/cute-food",
+  "homepage": "https://svetlabu.github.io/cute-food/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
