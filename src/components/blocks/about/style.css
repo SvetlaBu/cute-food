@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  position: relative;
+  padding-left: 90px;
+  padding-top: 183px;
+  padding-bottom: 183px;
+  padding-right: 592px;
+  background-color: #fefad8;
+  align-items: center;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.about__wrapper {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  min-width: 540px;
+  z-index: 3;
+}
+
+.about__text {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding-right: 122px;
+  margin-bottom: 40px;
+}
+
+.about::after {
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  display: block;
+  content: "";
+  width: 526px;
+  height: 520px;
+  margin: auto;
+  background: url("https://i.ibb.co/T0cR9sz/cute-food.jpg");
+  background-size: cover;
+}
