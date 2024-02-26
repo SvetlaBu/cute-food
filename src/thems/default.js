@@ -1,5 +1,5 @@
 export const defaultTheme = {
-  fontColorBlack: "#333333",
+  fontColorBlack: "#555555",
   colorWhite: "#ffffff",
   backgroundColorGray: "#f7f7f7",
   backgroundColorBlue: "#d8ecfe",
@@ -9,7 +9,7 @@ export const defaultTheme = {
   buttonColorHoverActive: "#fc7427",
   pagePadding: "90px",
   indent: "20px",
-  fontFamily: '"Protest Riot", "Arial", sans-serif',
+  fontFamily: '"Oswald", "Arial", sans-serif',
   fontSizeDefault: "18px",
   lineHeightDefault: 1.5,
   pageWidth: "1280px",

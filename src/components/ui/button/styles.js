@@ -8,6 +8,7 @@ export const StyledButton = styled(Link)`
   min-width: ${(props) => (props.$maxWidth ? "100%" : "260px")};
   max-width: 700px;
   font-size: ${(props) => props.theme.fontSizeDefault};
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: bold;
   line-height: 58px;
   text-align: center;
