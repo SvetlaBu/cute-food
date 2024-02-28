@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     position: relative;
     min-height: 100%;
-    font-family: "Inter", "Arial", sans-serif;
+    font-family: "Protest Riot", "Arial", sans-serif;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
