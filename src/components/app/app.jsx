@@ -14,7 +14,7 @@ export default function App() {
       <GlobalStyle />
       <Router>
         <Routes>
-          <Route path={AppRoute.MAIN} element={<PageWrapper />}>
+          <Route path="/" element={<PageWrapper />}>
             <Route index element={<MainPage features={features} />} />
             <Route
               path={AppRoute.ORDER.replace(AppRoute.MAIN, "")}

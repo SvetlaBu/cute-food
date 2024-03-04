@@ -9,7 +9,7 @@ export const defaultTheme = {
   buttonColorHoverActive: "#fc7427",
   pagePadding: "90px",
   indent: "20px",
-  fontFamily: '"Oswald", "Arial", sans-serif',
+  fontFamily: '"Fira Sans", "Arial", sans-serif',
   fontSizeDefault: "18px",
   lineHeightDefault: 1.5,
   pageWidth: "1280px",
