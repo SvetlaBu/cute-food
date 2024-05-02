@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/SvetlaBu/cute-food/static/css/main.9f88c9f5.css",
-    "main.js": "/SvetlaBu/cute-food/static/js/main.12091692.js",
-    "static/js/488.4fb22778.chunk.js": "/SvetlaBu/cute-food/static/js/488.4fb22778.chunk.js",
-    "static/media/logo-food.svg": "/SvetlaBu/cute-food/static/media/logo-food.e297c2f569e0e69c667ef29d850a3a41.svg",
-    "index.html": "/SvetlaBu/cute-food/index.html",
-    "static/media/checkbox.svg": "/SvetlaBu/cute-food/static/media/checkbox.f9c14cec482370f8ca49957a40051734.svg",
-    "main.9f88c9f5.css.map": "/SvetlaBu/cute-food/static/css/main.9f88c9f5.css.map",
-    "main.12091692.js.map": "/SvetlaBu/cute-food/static/js/main.12091692.js.map",
-    "488.4fb22778.chunk.js.map": "/SvetlaBu/cute-food/static/js/488.4fb22778.chunk.js.map"
+    "main.css": "/cute-food/static/css/main.8d02af6d.css",
+    "main.js": "/cute-food/static/js/main.67ea6129.js",
+    "static/js/488.4fb22778.chunk.js": "/cute-food/static/js/488.4fb22778.chunk.js",
+    "static/media/logo-food.svg": "/cute-food/static/media/logo-food.0cc9b6151fecfa50f8ca4c61c2af904e.svg",
+    "index.html": "/cute-food/index.html",
+    "static/media/checkbox.svg": "/cute-food/static/media/checkbox.f9c14cec482370f8ca49957a40051734.svg",
+    "main.8d02af6d.css.map": "/cute-food/static/css/main.8d02af6d.css.map",
+    "main.67ea6129.js.map": "/cute-food/static/js/main.67ea6129.js.map",
+    "488.4fb22778.chunk.js.map": "/cute-food/static/js/488.4fb22778.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f88c9f5.css",
-    "static/js/main.12091692.js"
+    "static/css/main.8d02af6d.css",
+    "static/js/main.67ea6129.js"
   ]
 }
