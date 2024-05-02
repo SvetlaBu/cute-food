@@ -1,16 +1,17 @@
 {
   "name": "cute-food",
+  "homepage": "https://svetlabu.github.io/cute-food/",
+  "main": "src/index.js",
   "version": "0.1.0",
-  "homepage": "https://svetlabu.github.io/cute-food",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
-    "react-scripts": "5.0.1",
     "save-dev": "^0.0.1-security",
     "styled-components": "^6.1.8",
     "swiper": "^11.0.6",
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,7 +44,6 @@
     ]
   },
   "devDependencies": {
-    "babel-jest": "^29.7.0",
-    "gh-pages": "^6.1.1"
+    "react-scripts": "^5.0.1"
   }
 }
