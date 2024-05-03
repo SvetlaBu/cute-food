@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { StrictMode } from "react";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./thems/default";
+import * as serviceWorker from './serviceWorker';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,3 +17,5 @@ root.render(
   </StrictMode>
 );
 reportWebVitals();
+
+serviceWorker.unregister();
